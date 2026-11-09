@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>CPU Clicker</title>
 
+  <!-- Telegram SDK (нужен, чтобы Mini App знал, что он внутри Telegram) -->
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+  <!-- Стили отдельно -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <main class="app">
+
+    <!-- Шапка с балансом -->
+    <header class="balance-block">
+      <span class="balance-label">Баланс</span>
+      <div class="balance">
+        <span id="balance-value">0.00000000</span>
+        <span class="balance-unit">BTC</span>
+      </div>
+      <div class="per-click">
+        за клик: <span id="per-click-value">0.00000001</span> BTC
+      </div>
+    </header>
+
+    <!-- Кликабельный процессор -->
+    <section class="cpu-zone">
+      <button id="cpu-button" class="cpu" aria-label="Кликнуть по процессору">
+        <div class="cpu-inner">
+          <span class="cpu-icon">🧠</span>
+          <span class="cpu-text">CPU</span>
+        </div>
+      </button>
+    </section>
+
+    <!-- Нижняя панель (заглушка под будущие фичи) -->
+    <footer class="bottom-bar">
+      <button class="tab active">🖱️ Клик</button>
+      <button class="tab" disabled>🖥️ Ферма</button>
+      <button class="tab" disabled>💱 Биржа</button>
+    </footer>
+
+  </main>
+
+  <!-- Тело (логика) отдельно -->
+  <script src="js/app.js"></script>
+</body>
+</html>
