@@ -298,3 +298,49 @@ html, body {
 .upgrade-price.cant-afford {
   color: #ef4444;
 }
+
+/* Внутренние вкладки магазина */
+.shop-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+.shop-tab {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.shop-tab.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+/* Обновляем карточку улучшения, чтобы она вмещала текст */
+.upgrade-item {
+  flex-direction: row;
+  align-items: center;
+  padding: 14px 12px;
+}
+
+.upgrade-info {
+  flex: 1;
+}
+
+.upgrade-name {
+  font-size: 15px;
+}
+
+.upgrade-desc {
+  margin-top: 4px;
+}
