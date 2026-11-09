@@ -56,22 +56,18 @@
 
 <!-- Экран магазина (скрыт по умолчанию) -->
 <section class="shop-screen hidden" id="shop-screen">
-  <h2 class="shop-title">Улучшения</h2>
   
-  <div class="shop-category">
-    <h3>👆 Сила клика</h3>
-    <div id="list-click" class="upgrade-list"></div>
+  <!-- Внутренние вкладки магазина -->
+  <div class="shop-tabs">
+    <button class="shop-tab active" id="shop-tab-click">👆 Клик</button>
+    <button class="shop-tab" id="shop-tab-mining">⛏️ Майнинг</button>
+    <button class="shop-tab" id="shop-tab-energy">⚡ Энергия</button>
   </div>
 
-  <div class="shop-category">
-    <h3>⛏️ Майнинг (в секунду)</h3>
-    <div id="list-mining" class="upgrade-list"></div>
+  <div id="shop-list-container" class="upgrade-list">
+    <!-- Сюда будут рендериться карточки улучшений -->
   </div>
-
-  <div class="shop-category">
-    <h3>⚡ Энергия</h3>
-    <div id="list-energy" class="upgrade-list"></div>
-  </div>
+  
 </section>
 
   </main>
