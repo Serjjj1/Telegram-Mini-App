@@ -1,1 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
 
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node (на будущее, если добавим сборку)
+node_modules/
