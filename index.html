@@ -47,12 +47,32 @@
       </button>
     </section>
 
-    <!-- Нижняя панель (заглушка под будущие фичи) -->
-    <footer class="bottom-bar">
-      <button class="tab active">🖱️ Клик</button>
-      <button class="tab" disabled>🖥️ Ферма</button>
-      <button class="tab" disabled>💱 Биржа</button>
-    </footer>
+    <!-- Нижняя панель -->
+<footer class="bottom-bar">
+  <button class="tab active" id="tab-click">🖱️ Клик</button>
+  <button class="tab" id="tab-shop">🛒 Магазин</button>
+  <button class="tab" disabled>🖥️ Ферма</button>
+</footer>
+
+<!-- Экран магазина (скрыт по умолчанию) -->
+<section class="shop-screen hidden" id="shop-screen">
+  <h2 class="shop-title">Улучшения</h2>
+  
+  <div class="shop-category">
+    <h3>👆 Сила клика</h3>
+    <div id="list-click" class="upgrade-list"></div>
+  </div>
+
+  <div class="shop-category">
+    <h3>⛏️ Майнинг (в секунду)</h3>
+    <div id="list-mining" class="upgrade-list"></div>
+  </div>
+
+  <div class="shop-category">
+    <h3>⚡ Энергия</h3>
+    <div id="list-energy" class="upgrade-list"></div>
+  </div>
+</section>
 
   </main>
 
